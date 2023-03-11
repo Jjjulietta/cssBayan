@@ -1,1 +1,224 @@
 /*Обнуление*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #636060;
+  
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   }
+
+.bayan__form {
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 0.5em;
+    border: 0.5em solid yellow;
+}
+.bayan__title {
+    padding-left: 6%;
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 3%;
+    color: yellow;
+   }
+.bayan__block {
+    width: 85%;
+    font-size: 100%;
+    border-top: 2px solid yellow;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.item__mem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    width: 100%;
+    height: 0em;
+   opacity: 0;
+    transition: all 0.5s;
+}
+.item__img {
+    object-fit: contain;
+    transition: all 0.5s;
+    padding: 0.1em;
+    width: 50%;
+    height: auto;
+}
+
+#item__img4 {
+    object-fit: contain;
+    transition: all 0.5s;
+    padding: 0.1em;
+    width: 35%;
+    height: auto;
+}
+#item__img3 {
+    object-fit: contain;
+    transition: all 0.5s;
+    padding: 0.1em;
+    width: 35%;
+    height: auto;
+}
+.bayan__item {
+   /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;*/
+    border-bottom: 0.2rem solid yellow;
+    transition: all 0.5s;
+}
+.item__name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.item__title {
+    flex: 1 1 90%;
+    align-self: flex-start;
+    padding-top: 0.1em;
+    color: blue;
+}
+.item__icon {
+    background-image: url(/cssBayan/images/add_FILL0_wght300_GRAD0_opsz24.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1em;
+    height: 1em;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+input{
+   display: none;
+}
+
+
+label input:checked ~ .item__mem {
+    opacity: 1;
+    visibility: visible;
+    height: 7em;
+}
+label input:checked ~ div > h2{
+    color: yellow
+}
+
+label input:checked ~ div > div[class = 'item__icon'] {
+    background-image: url(/cssBayan/images/close_FILL0_wght300_GRAD0_opsz24.svg);
+}
+
+
+
+@media(min-width: 820px){
+    .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+}
+
+@media(min-width: 1181px){
+    .item__title {
+        flex: 1 1 60%;
+        align-self: flex-start;
+        padding-top: 0.1em;
+        color: blue;
+    }
+    /*.item__mem {
+        margin-left: 18%;
+        visibility: hidden;
+        width: 60%;
+        height: 0em;
+       opacity: 0;
+        transition: all 0.5s;
+    }*/
+    .item__img {
+        object-fit: contain;
+        height: auto;
+        width: 40%;
+        transition: all 0.5s;
+        padding: 0.2em;
+    }
+    .bayan__item >label:hover > div[class='item__mem']{
+        opacity: 1;
+        visibility: visible;
+        height: 8em;
+    }
+    .bayan__item:hover >label > input:active ~ div > h2{
+        color: yellow;
+    }
+    .bayan__block:hover > div >label > div >h2{
+        color:blueviolet;
+    }
+    
+    .bayan__block:hover > div >label > div[class='item__name'] > div[class="item__icon"]{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .bayan__item:hover >label > div> div[class='item__icon'] {
+        background-image: url(/cssBayan/images/close_FILL0_wght300_GRAD0_opsz24.svg);
+    }
+    
+    .item__img:hover{
+        transform: scale(110%);
+    }
+}
+
+
+
+
+
