@@ -128,7 +128,7 @@ label{
     color: blue;
 }
 .item__icon {
-    background-image: url(/cssBayan/images/add_FILL0_wght300_GRAD0_opsz24.svg);
+    background-image: url(./images/add_FILL0_wght300_GRAD0_opsz24.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 1em;
@@ -153,7 +153,7 @@ label input:checked ~ div > h2{
 }
 
 label input:checked ~ div > div[class = 'item__icon'] {
-    background-image: url(/cssBayan/images/close_FILL0_wght300_GRAD0_opsz24.svg);
+    background-image: url(./images/close_FILL0_wght300_GRAD0_opsz24.svg);
 }
 
 @media(hover:hover) {
@@ -175,7 +175,7 @@ label input:checked ~ div > div[class = 'item__icon'] {
     }
 
     .bayan__item:hover >label > div> div[class='item__icon'] {
-        background-image: url(/cssBayan/images/close_FILL0_wght300_GRAD0_opsz24.svg);
+        background-image: url(./images/close_FILL0_wght300_GRAD0_opsz24.svg);
     }
 
     .item__img:hover{
@@ -361,7 +361,7 @@ label input:checked ~ div > div[class = 'item__icon'] {
     }
 
     .bayan__item:hover >label > div> div[class='item__icon'] {
-        background-image: url(/cssBayan/images/close_FILL0_wght300_GRAD0_opsz24.svg);
+        background-image: url(./images/close_FILL0_wght300_GRAD0_opsz24.svg);
     }
     
     .item__img:hover{
